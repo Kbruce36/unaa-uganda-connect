@@ -3,44 +3,63 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Linkedin } from "lucide-react";
 import leadershipBg from "@/assets/leadership-bg.jpg";
-import leaderEron from "@/assets/leader-eron.jpg";
-import leaderSamantha from "@/assets/leader-samantha.jpg";
-import leaderLillian from "@/assets/leader-lillian.jpg";
-import leaderKemigisha from "@/assets/leader-kemigisha.jpg";
+import Jo from "@/assets/leader-jo.jpg";
+import Samantha from "@/assets/Samantha.jpg";
+import Joshua from "@/assets/Joshua.jpg";
+import Lillian from "@/assets/Lillian.jpg";
+import Ednah from "@/assets/Ednah.jpg";
+import Andrew from "@/assets/Andrew.jpg"; 
+
 
 const Leadership = () => {
   const leaders = [
     {
       id: 1,
-      name: "Eron Joshua",
-      position: "General Secretary",
-      bio: "Committed to effective communication and organizational excellence.",
-      email: "eron.joshua@student.kyu.ac.ug",
-      image: leaderEron,
+      name: "Winena Joanne Jo",
+      position: "President",
+      bio: "Passionate about empowering youth and fostering leadership for a brighter future.",
+      email: "winena.joanne@student.kyu.ac.ug",
+      image: Jo,
     },
     {
       id: 2,
       name: "Samantha Kkungu",
       position: "Vice President",
-      bio: "Dedicated to sustainable development and community engagement.",
+      bio: "Advocates for sustainable development and inspires teamwork to achieve shared goals.",
       email: "samantha.kkungu@student.kyu.ac.ug",
-      image: leaderSamantha,
+      image: Samantha,
     },
     {
       id: 3,
-      name: "Lillian Lydia",
-      position: "Public Relations",
-      bio: "Amplifying our voice and building strong community connections.",
-      email: "lillian.lydia@student.kyu.ac.ug",
-      image: leaderLillian,
+      name: "Eron Joshua",
+      position: "General Secretary",
+      bio: "Ensures smooth communication and organization, driving the team’s success.",
+      email: "eron.joshua@student.kyu.ac.ug",
+      image: Joshua,
     },
     {
       id: 4,
+      name: "Lillian Lydia",
+      position: "Public Relations",
+      bio: "Connects communities and amplifies our message for greater impact.",
+      email: "lillian.lydia@student.kyu.ac.ug",
+      image: Lillian,
+    },
+    {
+      id: 5,
       name: "Kemigisha Ednah",
       position: "Programs Coordinator",
-      bio: "Leading initiatives on SDGs and youth development programs.",
+      bio: "Leads innovative programs focused on SDGs and youth empowerment.",
       email: "kemigisha.ednah@student.kyu.ac.ug",
-      image: leaderKemigisha,
+      image: Ednah,
+    },
+    {
+      id: 6,
+      name: "Andrew",
+      position: "Faculty Representative",
+      bio: "Bridges the gap between faculty and students, fostering collaboration and academic excellence.",
+      email: "andrew.faculty@student.kyu.ac.ug",
+      image: Andrew, // Add Andrew's image path if available
     },
   ];
 
