@@ -3,6 +3,10 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Linkedin } from "lucide-react";
 import leadershipBg from "@/assets/leadership-bg.jpg";
+import leaderEron from "@/assets/leader-eron.jpg";
+import leaderSamantha from "@/assets/leader-samantha.jpg";
+import leaderLillian from "@/assets/leader-lillian.jpg";
+import leaderKemigisha from "@/assets/leader-kemigisha.jpg";
 
 const Leadership = () => {
   const leaders = [
@@ -12,6 +16,7 @@ const Leadership = () => {
       position: "General Secretary",
       bio: "Committed to effective communication and organizational excellence.",
       email: "eron.joshua@student.kyu.ac.ug",
+      image: leaderEron,
     },
     {
       id: 2,
@@ -19,6 +24,7 @@ const Leadership = () => {
       position: "Vice President",
       bio: "Dedicated to sustainable development and community engagement.",
       email: "samantha.kkungu@student.kyu.ac.ug",
+      image: leaderSamantha,
     },
     {
       id: 3,
@@ -26,6 +32,7 @@ const Leadership = () => {
       position: "Public Relations",
       bio: "Amplifying our voice and building strong community connections.",
       email: "lillian.lydia@student.kyu.ac.ug",
+      image: leaderLillian,
     },
     {
       id: 4,
@@ -33,6 +40,7 @@ const Leadership = () => {
       position: "Programs Coordinator",
       bio: "Leading initiatives on SDGs and youth development programs.",
       email: "kemigisha.ednah@student.kyu.ac.ug",
+      image: leaderKemigisha,
     },
   ];
 
@@ -64,8 +72,12 @@ const Leadership = () => {
             {leaders.map((leader) => (
               <Card key={leader.id} className="hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <div className="w-20 h-20 mx-auto mb-4 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center text-primary-foreground text-2xl font-bold">
-                    {leader.name.split(' ').map(n => n[0]).join('')}
+                  <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                    <img 
+                      src={leader.image} 
+                      alt={`${leader.name} - ${leader.position}`}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <CardTitle className="text-center text-xl">{leader.name}</CardTitle>
                   <CardDescription className="text-center font-semibold text-primary">
